@@ -38,19 +38,39 @@ struct ContentView: View {
         span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
     
     var body: some View {
-        ZStack{
-            //Map(coordinateRegion: $mapRegion)
-            Map(coordinateRegion: $region,
-            annotationItems: places)
-            { place in
-                MapMarker(coordinate: place.location)
+        NavigationView{
+            ZStack{
+                //Map(coordinateRegion: $mapRegion)
+                Map(coordinateRegion: $region,
+                annotationItems: places)
+                { place in
+                    MapMarker(coordinate: place.location)
+                }
+                    .ignoresSafeArea()
+                //Text("Saint Vincent College")
+                    //.font(.title)
+                
+                VStack(){
+                    Spacer()
+                    HStack(){
+                        NavigationLink {
+                            altView()
+                        } label: {
+                            Text("Hello")
+                        }
+
+                        Text("Map")
+
+                    }
+                    .padding(.all)
+                }
+                
+
+
+            }//end of zstack
+            .onTapGesture{
+                print(places[0].name)
             }
-                .ignoresSafeArea()
-            Text("Saint Vincent College")
-                .font(.title)
-        }
-        .onTapGesture{
-            print(places[0].name)
         }
     }
 }

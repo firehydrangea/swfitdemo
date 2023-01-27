@@ -14,6 +14,9 @@
 		9AB56E1A298451D9002CE062 /* swfitdemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB56E19298451D9002CE062 /* swfitdemoTests.swift */; };
 		9AB56E24298451D9002CE062 /* swfitdemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB56E23298451D9002CE062 /* swfitdemoUITests.swift */; };
 		9AB56E26298451D9002CE062 /* swfitdemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB56E25298451D9002CE062 /* swfitdemoUITestsLaunchTests.swift */; };
+		9AF96C312984712300A472DB /* altView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF96C302984712300A472DB /* altView.swift */; };
+		9AF96C322984712300A472DB /* altView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF96C302984712300A472DB /* altView.swift */; };
+		9AF96C332984712300A472DB /* altView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF96C302984712300A472DB /* altView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,7 @@
 		9AB56E1F298451D9002CE062 /* swfitdemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swfitdemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB56E23298451D9002CE062 /* swfitdemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swfitdemoUITests.swift; sourceTree = "<group>"; };
 		9AB56E25298451D9002CE062 /* swfitdemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swfitdemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9AF96C302984712300A472DB /* altView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = altView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 			children = (
 				9AB56E08298451D7002CE062 /* swfitdemoApp.swift */,
 				9AB56E0A298451D7002CE062 /* ContentView.swift */,
+				9AF96C302984712300A472DB /* altView.swift */,
 				9AB56E0C298451D8002CE062 /* Assets.xcassets */,
 				9AB56E0E298451D8002CE062 /* Preview Content */,
 			);
@@ -258,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AB56E0B298451D7002CE062 /* ContentView.swift in Sources */,
+				9AF96C312984712300A472DB /* altView.swift in Sources */,
 				9AB56E09298451D7002CE062 /* swfitdemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AF96C322984712300A472DB /* altView.swift in Sources */,
 				9AB56E1A298451D9002CE062 /* swfitdemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AB56E24298451D9002CE062 /* swfitdemoUITests.swift in Sources */,
+				9AF96C332984712300A472DB /* altView.swift in Sources */,
 				9AB56E26298451D9002CE062 /* swfitdemoUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
