@@ -16,11 +16,11 @@ struct altView: View {
             Spacer()
             HStack(){
                 Text("Hello")
-                NavigationLink{
-                    ContentView()
-                } label: {
-                    Text("Map")
-                }
+                //NavigationLink{
+                    //ContentView()
+                //} label: {
+                    //Text("Map")
+                //}
 
             }
             .padding(.all)

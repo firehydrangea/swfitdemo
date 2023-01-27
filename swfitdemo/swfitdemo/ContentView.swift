@@ -38,7 +38,12 @@ struct ContentView: View {
         span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
     
     var body: some View {
-        NavigationView{
+        TabView{
+            Text("Hello")
+                .tabItem{
+                    Text("HOME")
+                }
+                .tag(0)
             ZStack{
                 //Map(coordinateRegion: $mapRegion)
                 Map(coordinateRegion: $region,
@@ -52,17 +57,17 @@ struct ContentView: View {
                 
                 VStack(){
                     Spacer()
-                    HStack(){
-                        NavigationLink {
-                            altView()
-                        } label: {
-                            Text("Hello")
-                        }
+                    //HStack(){
+                        //NavigationLink {
+                            //altView()
+                        //} label: {
+                            //Text("Hello")
+                        //}
 
-                        Text("Map")
+                        //Text("Map")
 
-                    }
-                    .padding(.all)
+                    //}
+                    //.padding(.all)
                 }
                 
 
@@ -71,6 +76,10 @@ struct ContentView: View {
             .onTapGesture{
                 print(places[0].name)
             }
+            .tabItem{
+                Text("MAP")
+            }
+            .tag(1)
         }
     }
 }
