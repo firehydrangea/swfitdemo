@@ -52,8 +52,8 @@ struct ContentView: View {
                     MapMarker(coordinate: place.location)
                 }
                     .ignoresSafeArea()
-                //Text("Saint Vincent College")
-                    //.font(.title)
+                Text("Saint Vincent College")
+                    .font(.title)
                 
                 VStack(){
                     Spacer()

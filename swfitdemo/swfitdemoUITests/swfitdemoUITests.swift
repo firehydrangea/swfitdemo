@@ -22,14 +22,30 @@ class swfitdemoUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
+    func testSwitchToMapTab() {
         let app = XCUIApplication()
         app.launch()
+        let tabBar = XCUIApplication().tabBars["Tab Bar"]
+        let mapButton = tabBar.buttons["MAP"]
+        mapButton.tap()
+        let titleStaticText = app.staticTexts["Saint Vincent College"]
+        titleStaticText.tap()
+        XCTAssert(titleStaticText.exists)
 
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
+    func testSwitchToHomeTab(){
+        let app = XCUIApplication()
+        app.launch()
+        let tabBar = app.tabBars["Tab Bar"]
 
+        let mapButton = tabBar.buttons["MAP"]
+        mapButton.tap()
+        let homeButton = tabBar.buttons["HOME"]
+        homeButton.tap()
+        let helloStaticText = app.staticTexts["Hello"]
+        helloStaticText.tap()
+        XCTAssert(helloStaticText.exists)
+    }
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
             // This measures how long it takes to launch your application.
@@ -38,4 +54,7 @@ class swfitdemoUITests: XCTestCase {
             }
         }
     }
+    
+
+
 }
