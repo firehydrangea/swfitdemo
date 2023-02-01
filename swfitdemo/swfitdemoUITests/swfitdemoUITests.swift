@@ -31,6 +31,7 @@ class swfitdemoUITests: XCTestCase {
         let titleStaticText = app.staticTexts["Saint Vincent College"]
         titleStaticText.tap()
         XCTAssert(titleStaticText.exists)
+    
 
     }
     func testSwitchToHomeTab(){
