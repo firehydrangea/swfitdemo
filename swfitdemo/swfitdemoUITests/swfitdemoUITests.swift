@@ -45,7 +45,19 @@ class swfitdemoUITests: XCTestCase {
         homeButton.tap()
         let helloStaticText = app.staticTexts["Hello"]
         helloStaticText.tap()
+        
+        //
+        let app = XCUIApplication()
+        app.buttons["megaphone.fill"].tap()
+        app.buttons["Map Pin"].tap()
+        app.buttons["gearshape.fill"].tap()
+        
+        let announcementsStaticText = app.staticTexts["Announcements"]
+        announcementsStaticText.tap()
+        announcementsStaticText.tap()
+        app.staticTexts["button 3 pressed"].tap()
         XCTAssert(helloStaticText.exists)
+        //
     }
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
